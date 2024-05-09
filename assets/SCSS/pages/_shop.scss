@@ -1,0 +1,177 @@
+.scrolled {
+  width: 100%;
+  background-color: #fff;
+}
+.header-js {
+  width: 100%;
+  background-color: #fff;
+}
+
+header {
+  width: 100%;
+  nav {
+    width: 85%;
+    margin: auto;
+    a {
+      color: black;
+      &:hover {
+        color: black;
+      }
+      strong {
+        font-weight: 700;
+      }
+    }
+    .navbar-collapse {
+      justify-content: flex-end;
+      a {
+        color: #3b3a3a;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+  #page-sec {
+    background-image: url(/assets/images/shop-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    .page-sec-bg {
+      background-color: #0000006c;
+      width: 100%;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .text-pg {
+        h2 {
+          color: #fff;
+          font-size: 45px;
+          font-weight: 600;
+          letter-spacing: 5px;
+          transition-duration: 0.5s;
+          &:hover {
+            color: #fffb00;
+            font-size: 50px;
+            letter-spacing: 7px;
+            font-weight: 700;
+            transition-duration: 0.5s;
+          }
+        }
+      }
+    }
+  }
+  #product-sec {
+    width: 100%;
+    .pro-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .pro-navbar {
+        ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          li {
+            list-style: none;
+            a {
+              text-decoration: none;
+              color: #000;
+            }
+          }
+        }
+      }
+      .pro-funk {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        input{
+          border: none;
+          outline: none;
+          border-bottom: 1px solid gray;
+        }
+        button{
+          border: none;
+          padding: 5px;
+          border-radius: 5px;
+          background-color: #717fe0;
+          color: #fff;
+          font-size: 16px;
+          transition-duration: .1s;
+          &:hover{
+            padding: 3px;
+            font-size: 14px;
+            background-color: #000;
+            border-radius: 3px;
+            transition-duration: .1s;
+          }
+        }
+      }
+    }
+    #products {
+      img{
+        width: 100%;
+      }
+      .col-12 {
+        position: relative;
+        .btn-fixed {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+        }
+      }
+    }
+  }
+}
+
+// all device full responsive design for shop.html
+
+@media only screen and (max-width:991px) {
+  header{
+    background-color: #fff;
+  }
+  .header-js{
+    background-color: #fff;
+  }
+  main{
+    #product-sec{
+      .pro-head{
+        justify-content: center;
+        flex-direction: column;
+      }
+    }
+  }
+}
+@media only screen and (max-width:768px) {
+  main{
+    #product-sec{
+      .pro-head{
+        justify-content: center;
+        flex-direction: column;
+      }
+    }
+  }
+}
+@media only screen and (max-width:480px) {
+  main{
+    #product-sec{
+      .pro-head{
+        justify-content: center;
+        flex-direction: column;
+      }
+    }
+  }
+}

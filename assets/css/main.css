@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.font-icons {
+  font-size: 54px;
+  color: #747474;
+}
+
+.scrolled {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background-color: #fff;
+}
+
+.header-js {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+header {
+  width: 100%;
+}
+header nav {
+  width: 85%;
+  margin: auto;
+}
+header nav a {
+  color: black;
+}
+header nav a:hover {
+  color: black;
+}
+header nav a strong {
+  font-weight: 700;
+}
+header nav .navbar-collapse {
+  justify-content: flex-end;
+}
+header nav .navbar-collapse a {
+  color: #3b3a3a;
+}
+header nav .navbar-collapse a:hover {
+  color: black;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+}
+main #hero-sec {
+  width: 100%;
+  height: 660px;
+  background-image: url(/assets/images/slide-03.jpg);
+  background-size: cover;
+}
+main #hero-sec .hero-sec-main {
+  width: 100%;
+  height: 660px;
+  display: flex;
+  align-items: center;
+}
+main #hero-sec .hero-sec-main .hero-text h2 {
+  font-size: 64px;
+}
+main #hero-sec .hero-sec-main .hero-text button {
+  background-color: #717fe0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 35px;
+  color: #fff;
+  font-weight: 600;
+  transition-duration: 0.5s;
+}
+main #hero-sec .hero-sec-main .hero-text button:hover {
+  background-color: #000;
+  transition-duration: 0.5s;
+}
+main #fashion-sec {
+  width: 100%;
+}
+main #fashion-sec .fashion-acces,
+main #fashion-sec .fashion-men,
+main #fashion-sec .fashion-women {
+  position: relative;
+  border: 1px solid gray;
+  padding: 35px;
+  width: 100%;
+  height: 235px;
+}
+main #fashion-sec .fashion-acces .fash-img,
+main #fashion-sec .fashion-men .fash-img,
+main #fashion-sec .fashion-women .fash-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+main #fashion-sec .fashion-acces .fash-img img,
+main #fashion-sec .fashion-men .fash-img img,
+main #fashion-sec .fashion-women .fash-img img {
+  width: 100%;
+}
+main #product-sec {
+  width: 100%;
+}
+main #product-sec .pro-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #product-sec .pro-head .pro-navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+main #product-sec .pro-head .pro-navbar ul li {
+  list-style: none;
+}
+main #product-sec .pro-head .pro-navbar ul li a {
+  text-decoration: none;
+  color: #000;
+}
+main #product-sec .pro-head .pro-funk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+main #product-sec .pro-head .pro-funk input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+}
+main #product-sec .pro-head .pro-funk button {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #717fe0;
+  color: #fff;
+  font-size: 16px;
+  transition-duration: 0.1s;
+}
+main #product-sec .pro-head .pro-funk button:hover {
+  padding: 3px;
+  font-size: 14px;
+  background-color: #000;
+  border-radius: 3px;
+  transition-duration: 0.1s;
+}
+main #product-sec #products .col-12 {
+  position: relative;
+}
+main #product-sec #products .col-12 .btn-fixed {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@media only screen and (max-width: 991px) {
+  header {
+    background-color: #fff;
+  }
+  .header-js {
+    background-color: #fff;
+  }
+  main #hero-sec {
+    height: 450px;
+  }
+  main #hero-sec .hero-sec-main {
+    height: 450px;
+  }
+  main #hero-sec .hero-sec-main .hero-text h2 {
+    font-size: 51px;
+  }
+  main #hero-sec .hero-sec-main .hero-text h4 {
+    font-size: 18px;
+  }
+  main #hero-sec .hero-sec-main .hero-text button {
+    padding: 8px 18px;
+  }
+  main #product-sec .pro-head {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main #hero-sec {
+    height: 450px;
+  }
+  main #hero-sec .hero-sec-main {
+    height: 450px;
+  }
+  main #hero-sec .hero-sec-main .hero-text h2 {
+    font-size: 45px;
+  }
+  main #hero-sec .hero-sec-main .hero-text h4 {
+    font-size: 16px;
+  }
+  main #hero-sec .hero-sec-main .hero-text button {
+    padding: 7px 15px;
+  }
+  main #product-sec .pro-head {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 480px) {
+  main #hero-sec {
+    height: 300px;
+  }
+  main #hero-sec .hero-sec-main {
+    height: 300px;
+  }
+  main #hero-sec .hero-sec-main .hero-text h2 {
+    font-size: 30px;
+  }
+  main #hero-sec .hero-sec-main .hero-text h4 {
+    font-size: 12px;
+  }
+  main #hero-sec .hero-sec-main .hero-text button {
+    padding: 5px 10px;
+    font-weight: 200;
+  }
+  main #product-sec .pro-head {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
